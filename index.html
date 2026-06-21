@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practicas</title>
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/game_1.css">
+  <link rel="stylesheet" href="css/game_2.css">
+  <link rel="stylesheet" href="css/game_3.css">
+  <link rel="stylesheet" href="css/game_4.css">
+  <link rel="stylesheet" href="css/game_5.css">
+  <link rel="stylesheet" href="css/game_6.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Practicas renovadas de JavaScript</h1>
+  </header>
+
+  <main class="main-container">
+
+    <section class="game-section">
+      <h2 class="game-title">Tres en Raya</h2>
+      <article class="game-1">
+        <button id="game-1-solo" class="game-1-option-btn">Un Jugador</button>
+        <button id="game-1-multi" class="game-1-option-btn">Dos Jugadores</button>
+
+        <div class="game-1-container">
+          <button class="game-1-btn game-1-available" data-selected="false"></button>
+          <button class="game-1-btn game-1-available" data-selected="false"></button>
+          <button class="game-1-btn game-1-available" data-selected="false"></button>
+          <button class="game-1-btn game-1-available" data-selected="false"></button>
+          <button class="game-1-btn game-1-available" data-selected="false"></button>
+          <button class="game-1-btn game-1-available" data-selected="false"></button>
+          <button class="game-1-btn game-1-available" data-selected="false"></button>
+          <button class="game-1-btn game-1-available" data-selected="false"></button>
+          <button class="game-1-btn game-1-available" data-selected="false"></button>
+        </div>
+
+        <h3 class="game-1-message d-none"></h3>
+        <button id="game-1-restart" class="game-1-option-btn d-none">Reiniciar</button>
+      </article>
+    </section>
+
+    <section class="game-section">
+      <h2 class="game-title">Calculadora</h2>
+      <article class="game-2">
+        <div class="game-2-output">0</div>
+        <div class="game-2-container">
+          <button class="game-2-btn option-ce">CE</button>
+          <button class="game-2-btn option-c">C</button>
+          <button class="game-2-btn option-bs">⌫</button>
+          <button class="game-2-btn operation" data-value="/">÷</button>
+          <button class="game-2-btn number" data-value="1">1</button>
+          <button class="game-2-btn number" data-value="2">2</button>
+          <button class="game-2-btn number" data-value="3">3</button>
+          <button class="game-2-btn operation" data-value="*">x</button>
+          <button class="game-2-btn number" data-value="4">4</button>
+          <button class="game-2-btn number" data-value="5">5</button>
+          <button class="game-2-btn number" data-value="6">6</button>
+          <button class="game-2-btn operation" data-value="-">-</button>
+          <button class="game-2-btn number" data-value="7">7</button>
+          <button class="game-2-btn number" data-value="8">8</button>
+          <button class="game-2-btn number" data-value="9">9</button>
+          <button class="game-2-btn operation" data-value="+">+</button>
+          <button class="game-2-btn sign">±</button>
+          <button class="game-2-btn number" data-value="0">0</button>
+          <button class="game-2-btn dot">.</button>
+          <button class="game-2-btn result">=</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="game-section">
+      <h2 class="game-title">Juego de Memoria</h2>
+      <article class="game-3">
+        <h3 class="game-3-message d-none"></h3>
+        <button class="game-3-btn d-none">Reiniciar</button>
+        <div class="game-3-container"></div>
+        <template id="game-3-template-card">
+          <section class="game-3-card">
+            <div class="flip-face flip-front">
+              <img class="game-3-img" src="img/game_3/card_face.jpg" alt="Parte Trasera">
+            </div>
+            <div class="flip-face flip-back">
+              <img alt="Parte Delantera">
+            </div>
+          </section>
+        </template>
+      </article>
+    </section>
+
+    <section class="game-section">
+      <h2 class="game-title">Piedra Papel Tijera</h2>
+      <article class="game-4">
+        <div class="game-4-container">
+          <secttion class="game-4-output">
+            <div id="game-4-player1" class="game-4-player-output">
+              <img>
+            </div>
+            <div id="game-4-player2" class="game-4-player-output">
+              <img>
+            </div>
+          </secttion>
+          <h3 class="game-4-message">Seleccione una opcion</h3>
+          <secttion class="game-4-options">
+            <button id="rock" class="game-4-btn"><img src="img/game_4/rock.svg" alt="Piedra"></button>
+            <button id="paper" class="game-4-btn"><img src="img/game_4/paper.svg" alt="Papel"></button>
+            <button id="scissors" class="game-4-btn"><img src="img/game_4/scissors.svg" alt="Tijera"></button>
+          </secttion>
+        </div>
+      </article>
+    </section>
+
+    <section class="game-section">
+      <h2 class="game-title">Snake</h2>
+      <article class="game-5">
+        <div class="game-5-container">
+          <button class="game-5-start-btn">Empezar</button>
+          <h3 class="game-5-score d-none"></h3>
+          <canvas id="game-5-canvas"></canvas>
+        </div>
+
+      </article>
+    </section>
+
+    <section class="game-section">
+      <h2 class="game-title">Canciones Para Agregar</h2>
+      <article class="game-6">
+        <form class="game-6-form">
+          <input type="text" required name="name" id="name" placeholder="Nombre">
+          <input type="text" required name="artist" id="artist" placeholder="Artista">
+          <select required name="category" id="category">
+            <option value="" selected>Categoria</option>
+          </select>
+          <input type="submit" value="Insertar">
+        </form>
+        <div class="game-6-container">
+        </div>
+        <template class="game-6-template">
+          <section class="game-6-song">
+            <div class="song-info">
+              <p class="song-name"></p>
+              <p class="song-artist"></p>
+              <p class="song-category"></p>
+            </div>
+            <div class="song-events">
+              <button class="song-edit">Editar</button>
+              <button class="song-delete">Eliminar</button>
+            </div>
+          </section>
+        </template>
+      </article>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+  <script src="js/index.js" type="module"></script>
+</body>
+
+</html>

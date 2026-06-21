@@ -1,0 +1,17 @@
+{
+  "songs": [
+    {
+      "name": "BB's Theme 2022",
+      "artist": "Death Stranding 2",
+      "category": "Vibes",
+      "id": "20"
+    },
+    {
+      "name": "csda",
+      "artist": "fgvs",
+      "category": "Pop",
+      "id": "M2X94mE5iMo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

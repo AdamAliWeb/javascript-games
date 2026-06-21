@@ -1,0 +1,95 @@
+:root {
+  --game3-color1: #bdbd91;
+  --game3-color2: #38b838;
+}
+
+.game-3-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+  padding: .5rem;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.game-3-card {
+  width: 22vw;
+  height: 22vw;
+  position: relative;
+  cursor: pointer;
+  perspective: 10rem;
+  transition: transform .5s linear;
+  transform-style: flat;
+  transform-style: preserve-3d;
+}
+
+.game-3-card img {
+  border-radius: 4px;
+  border: 2px solid var(--game3-color1);
+  width: 22vw;
+  height: 22vw;
+}
+
+.flip-card {
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+.flip-face {
+  position: absolute;
+  backface-visibility: visible;
+  backface-visibility: hidden;
+}
+
+.flip-front {
+  transform: rotateY(0deg);
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+.game-3-btn {
+  margin: 1rem;
+  border-radius: .5rem;
+  padding: .5rem;
+  font-size: var(--font-size3);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+
+.game-3-btn:hover {
+  background-color: var(--game3-color2);
+  color: white;
+}
+
+@media screen and (min-width: 500px) {
+  .game-3-container {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .game-3-card {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .game-3-card img {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .game-3-card {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .game-3-card img {
+    width: 7vw;
+    height: 7vw;
+  }
+}

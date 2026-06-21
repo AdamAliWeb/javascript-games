@@ -1,0 +1,34 @@
+:root {
+  --game5-color1: #ff4e4e;
+
+}
+
+#game-5-canvas {
+  background-color: var(--color2);
+  width: 240px;
+  height: 240px;
+}
+
+.game-5-start-btn {
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  padding: .5rem;
+  font-size: var(--font-size3);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+
+.game-5-start-btn:hover {
+  background-color: var(--game5-color1);
+  color: var(--bg-color2);
+}
+
+@media screen and (min-width: 500px) {
+  #game-5-canvas {
+    width: 480px;
+    height: 480px;
+  }
+}

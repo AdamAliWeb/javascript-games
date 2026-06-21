@@ -1,0 +1,155 @@
+:root {
+  --game6-color1: #7686c8;
+  --game6-color2: #4281f6;
+}
+
+/* Form */
+
+.game-6-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-6-form input[type="text"],
+.game-6-form select {
+  width: 100%;
+  border-radius: .25rem;
+  margin-bottom: .5rem;
+  margin-inline: .75rem;
+  padding: .5rem;
+  border: 2px solid black;
+}
+
+@keyframes game6Btn {
+  0% {
+    background-color: hsl(0, 100%, 50%);
+  }
+
+  25% {
+    background-color: hsl(90, 100%, 50%);
+  }
+
+  50% {
+    background-color: hsl(180, 100%, 50%);
+  }
+
+  75% {
+    background-color: hsl(270, 100%, 50%);
+  }
+
+  100% {
+    background-color: hsl(360, 100%, 50%);
+  }
+}
+
+
+.game-6-form input[type="submit"] {
+  width: 50%;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: var(--fontsize4);
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--color2);
+  background-color: hsl(0, 100%, 50%);
+  animation: game6Btn 3s linear infinite;
+  transition: all .2s ease-out;
+}
+
+.game-6-form input[type="submit"]:hover {
+  color: var(--bg-color2);
+}
+
+
+/* Songs */
+
+.game-6-song {
+  border: var(--game6-color1) 2px solid;
+  margin-block: 2rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  cursor: move;
+}
+
+.game-6-song.ghost {
+  opacity: 0;
+}
+
+.game-6-song.drag {
+  opacity: 1;
+}
+
+.song-info {
+  padding: .25rem;
+  border-radius: .25rem;
+  margin-bottom: .5rem;
+  font-weight: bold;
+  background-color: var(--bg-color1);
+}
+
+.song-events {
+  background-color: var(--game6-color2);
+  padding: .5rem;
+  border-radius: .25rem;
+}
+
+.song-events button {
+  padding: .25rem;
+  border-radius: .25rem;
+  background-color: var(--bg-color2);
+  cursor: pointer;
+  transition: all .3s ease-out;
+}
+
+.song-events button:hover {
+  background-color: #f00;
+  animation: game6Btn 3s linear .2s infinite;
+}
+
+@media screen and (min-width: 1000px) {
+  .game-6-form {
+    flex-direction: row;
+  }
+
+  .game-6-form input:first-child {
+    margin-left: 0;
+  }
+
+  .game-6-song {
+    display: flex;
+    padding: 0;
+    border: none;
+  }
+
+  .song-info {
+    display: flex;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    border-radius: .5rem 0 0 .5rem;
+  }
+
+  .song-info p {
+    flex-grow: 1;
+    margin: 0;
+    padding: 1rem .5rem;
+    border: medium solid #4281f6;
+  }
+
+  .song-info p:first-child {
+    border-radius: .5rem 0 0 .5rem;
+  }
+
+  .song-events {
+    display: flex;
+    align-items: center;
+    border-radius: 0 .5rem .5rem 0;
+  }
+
+  .song-events button {
+    margin-inline: .25rem;
+    padding: .5rem;
+  }
+
+}

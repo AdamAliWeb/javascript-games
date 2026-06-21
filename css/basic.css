@@ -1,0 +1,85 @@
+:root {
+  --bg-color1: #ddd;
+  --bg-color2: #fff;
+  --color1: #222;
+  --color2: #000;
+  --font-size1: .5rem;
+  --font-size2: 1rem;
+  --font-size3: 1.5rem;
+  --font-size4: 2rem;
+  --font-size5: 2.5rem;
+  --font-size6: 3rem;
+  --font-size7: 3.5rem;
+  --font-size8: 4rem;
+}
+
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h3[class*="game"] {
+  margin-bottom: .5rem;
+  font-size: var(--font-size3);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.main-container,
+.header {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.header {
+  font-size: var(--font-size3);
+  margin-block: 2rem;
+}
+
+.game-section {
+  min-height: 100vh;
+  padding: .5rem;
+  background-color: var(--bg-color1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-section:nth-child(even) {
+  background-color: var(--bg-color2);
+}
+
+.game-title {
+  padding-block: 3rem;
+  margin-top: 0;
+  font-size: var(--font-size4);
+}
+
+/* Utility Classes */
+.game-available {
+  pointer-events: none;
+}
+
+.d-none {
+  display: none !important;
+}

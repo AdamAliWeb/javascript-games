@@ -1,0 +1,86 @@
+:root {
+  --game4-invert-color1: #ecec2d;
+  --game4-invert-color2: #3636ec;
+  --game4-invert-color3: #00ffff;
+}
+
+.game-4-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-4-output {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.game-4-player-output {
+  width: 40vw;
+  height: 40vw;
+  background-color: var(--bg-color1);
+  margin: .5rem;
+  border-radius: .5rem;
+}
+
+.game-4-player-output img {
+  filter: invert(1);
+}
+
+.game-4-options {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.game-4-btn {
+  width: 20vw;
+  height: 20vw;
+  padding: 0;
+  border: 2px solid var(--color2);
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.game-4-btn img {
+  border-radius: .3rem;
+  transition: all .2s ease-out;
+}
+
+#rock img:hover {
+  background-color: var(--game4-invert-color1);
+  filter: invert(1);
+}
+
+#paper img:hover {
+  background-color: var(--game4-invert-color2);
+  filter: invert(1);
+}
+
+#scissors img:hover {
+  background-color: var(--game4-invert-color3);
+  filter: invert(1);
+}
+
+#scissors img {
+  transform: rotate(-90deg);
+}
+
+@media screen and (min-width: 500px) {
+  .game-4-output {
+    width: 480px;
+  }
+
+  .game-4-player-output {
+    width: 220px;
+    height: 220px;
+  }
+
+  .game-4-btn {
+    width: 6rem;
+    height: 6rem;
+  }
+}

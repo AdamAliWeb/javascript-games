@@ -1,0 +1,69 @@
+:root {
+  --game1-hover-color1: #0000ff95;
+  --game1-hover-color2: #ff000095;
+}
+
+.game-1-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-inline: auto;
+  border: thin solid var(--color1);
+}
+
+.game-1-btn {
+  width: 30vw;
+  height: 30vw;
+  font-size: var(--font-size6);
+  padding: 0;
+  cursor: pointer;
+  border: thin solid var(--color1);
+  background-color: #fff;
+  transition: all .2s ease-out;
+}
+
+
+.game-1-btn:hover {
+  background-color: var(--game1-hover-color1);
+  color: var(--bg-color2);
+}
+
+.game-1-btn[data-selected=true] {
+  pointer-events: none;
+}
+
+.game-1-btn.player2:hover {
+  background-color: var(--game1-hover-color2);
+}
+
+.game-1-option-btn {
+  padding: 1rem;
+  margin-block: 2rem;
+  font-size: var(--font-size3);
+  cursor: pointer;
+  border-radius: .5rem;
+  background-color: var(--game1-hover-color1);
+  color: #fff;
+  transition: all .2s ease-in-out;
+}
+
+.game-1-option-btn:nth-child(2) {
+  background-color: var(--game1-hover-color2);
+}
+
+.game-1-option-btn:hover {
+  background-color: var(--bg-color2);
+  color: var(--color1);
+}
+
+.game-1-message {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .game-1-btn {
+    width: 10rem;
+    height: 10rem;
+    font-size: var(--font-size8);
+  }
+}

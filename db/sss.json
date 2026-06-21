@@ -1,0 +1,116 @@
+{
+  "sagas": [
+    [
+      "Super Star Heroes",
+      "SSH"
+    ],
+    [
+      "Super Star Warriors",
+      "SSW"
+    ],
+    [
+      "Super Star Fusion",
+      "SSF"
+    ],
+    [
+      "Super Star Legacy",
+      "SSL"
+    ],
+    [
+      "Super Star Ancients",
+      "SSA"
+    ],
+    [
+      "Super Star End",
+      "SSE"
+    ]
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "name": "Adamstar",
+      "source": [
+        "SSH",
+        "SSW",
+        "SSF",
+        "SSL",
+        "SSE"
+      ],
+      "states": [
+        "Star",
+        "Electro-Star",
+        "Pyro-Star",
+        "Hydro-Star",
+        "Geo-Star",
+        "Super-Star",
+        "Light-Star",
+        "Dark-Star",
+        "Mega-Star"
+      ],
+      "weapons": []
+    },
+    {
+      "id": 2,
+      "name": "Sagrade",
+      "source": [
+        "SSH",
+        "SSW",
+        "SSF",
+        "SSL",
+        "SSE"
+      ],
+      "states": [
+        "Sacred-fluid",
+        "Prototype v1"
+      ],
+      "weapons": []
+    },
+    {
+      "id": 3,
+      "name": "Haram",
+      "source": [
+        "SSH",
+        "SSW",
+        "SSF",
+        "SSL",
+        "SSA",
+        "SSE"
+      ],
+      "states": [
+        "Shadow",
+        "Super-Shadow",
+        "Mega-Shadow",
+        "Hyper-Shadow",
+        "Ultra-Shadow"
+      ],
+      "weapons": [
+        "Shadowame"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Daedalus II",
+      "source": [
+        "SSA"
+      ],
+      "states": [],
+      "weapons": [
+        "Daedalus Bow",
+        "Daedalus Sword"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Lancelot",
+      "source": [
+        "SSA"
+      ],
+      "states": [
+        "Obsidian Flame"
+      ],
+      "weapons": [
+        "Double Obsidian Spears"
+      ]
+    }
+  ]
+}
