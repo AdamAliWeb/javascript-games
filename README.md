@@ -1,4 +1,4 @@
-# Practice Games
+# JavaScript Little Apps
 
 This project showcases my abilities with plain JavaScript, built around 2021–2022. Here is a breakdown of each exercise:
 

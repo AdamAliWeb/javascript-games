@@ -45,14 +45,14 @@ const game_start = (player_ops, player_src) => {
 const check_winner = (player1, player2) => {
   for (const ops in check_ops) {
     if (player1 === check_ops[ops][0][0] && player2 === check_ops[ops][0][1]) {
-      $game4_message.textContent = "Jugador 1 gano la partida";
+      $game4_message.textContent = "Player 1 won the game!";
     } else if (
       player1 === check_ops[ops][1][0] &&
       player2 === check_ops[ops][1][1]
     ) {
-      $game4_message.textContent = "Jugador 2 gano la partida";
+      $game4_message.textContent = "Player 2 won the game!";
     } else if (player1 === player2) {
-      $game4_message.textContent = "Empate";
+      $game4_message.textContent = "Draw";
     }
   }
 };

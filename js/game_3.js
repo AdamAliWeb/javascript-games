@@ -63,7 +63,7 @@ const game_over = () => {
     d.querySelector(".game-3-message").classList.remove("d-none");
     d.querySelector(".game-3-btn").classList.remove("d-none");
     d.querySelector(".game-3-message").textContent =
-      `Juego terminado, tuviste ${error_count} fallos`;
+      `Game Finished! You had ${error_count} mistakes.`;
   }
 };
 
